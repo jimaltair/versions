@@ -20,8 +20,8 @@ public class PrivateInterfaceMethods {
     public interface NamesInterface {
         default List<String> fetchInitialData() {
             try (BufferedReader br = new BufferedReader(
-                    new InputStreamReader(this.getClass()
-                            .getResourceAsStream("/names.txt")))) {
+                    new InputStreamReader(this.getClass().getResourceAsStream("/names.txt")))
+            ) {
                 return readNames(br);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -29,8 +29,7 @@ public class PrivateInterfaceMethods {
             }
         }
 
-        private List<String> readNames(BufferedReader br)
-                throws IOException {
+        private List<String> readNames(BufferedReader br) throws IOException {
             ArrayList<String> names = new ArrayList<>();
             String name;
             while ((name = br.readLine()) != null) {

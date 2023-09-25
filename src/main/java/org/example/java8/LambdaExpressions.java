@@ -7,7 +7,8 @@ import java.util.stream.Collectors;
 public class LambdaExpressions {
 
     public static List<Car> findCarsUsingLambda(List<Car> cars) {
-        return cars.stream().filter(car -> car.kilometers < 50000)
+        return cars.stream()
+                .filter(car -> car.kilometers < 50000)
                 .collect(Collectors.toList());
     }
 
@@ -35,5 +36,4 @@ public class LambdaExpressions {
         public String model;
         public double kilometers;
     }
-
 }

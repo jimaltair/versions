@@ -5,7 +5,9 @@ import java.util.HexFormat;
 
 public class HexFormatTesting {
     public static void main(String[] args) {
-        // позволяет отформатировать, например, массив байтов в виде шестнадцатеричной строчки
+        /**
+         * Позволяет отформатировать, например, массив байтов в виде шестнадцатеричной строчки
+         */
         HexFormat format = HexFormat
                 .ofDelimiter(":")
                 .withUpperCase()

@@ -9,7 +9,8 @@ public class MethodReference {
     List<Car> cars = new ArrayList<>();
 
     List<String> withoutMethodReference =
-            cars.stream().map(car -> car.toString())
+            cars.stream()
+                    .map(car -> car.toString())
                     .collect(Collectors.toList());
 
     List<String> methodReference = cars.stream()

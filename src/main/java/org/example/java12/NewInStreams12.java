@@ -8,7 +8,9 @@ import java.util.stream.Stream;
 
 public class NewInStreams12 {
     public static void main(String[] args) {
-        // Stream.teeing - позволяет в один проход пропустить стрим через два коллектора и потом объединить их результаты
+        /**
+         * Stream.teeing - позволяет в один проход пропустить стрим через два коллектора и потом объединить их результаты
+         */
         Collector<BigDecimal, ?, BigDecimal> averaging =
                 Collectors.teeing(
                         // collector1

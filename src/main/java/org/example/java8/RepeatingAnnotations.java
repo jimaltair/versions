@@ -15,8 +15,7 @@ public class RepeatingAnnotations {
 
     @Notify(email = "admin@company.com")
     @Notify(email = "owner@company.com")
-    public class UserNotAllowedForThisActionException
-            extends RuntimeException {
+    public class UserNotAllowedForThisActionException extends RuntimeException {
         final String user;
 
         public UserNotAllowedForThisActionException(String user) {

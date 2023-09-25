@@ -11,8 +11,7 @@ public class LocalTypeVar {
         Person Detta = new Person("Detta", "Walker");
         Person Jake = new Person("Jake", "Chambers");
 
-        List<Person> persons =
-                List.of(Roland, Susan, Eddie, Detta, Jake);
+        List<Person> persons = List.of(Roland, Susan, Eddie, Detta, Jake);
 
         for (Person person : persons) {
             System.out.println(person.name + " - " + person.lastname);

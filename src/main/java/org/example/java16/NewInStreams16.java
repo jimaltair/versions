@@ -4,7 +4,9 @@ import java.util.stream.Stream;
 
 public class NewInStreams16 {
     public static void main(String[] args) {
-        // mapMulti - это альтернатива flatMap, который позволяет не создавать вложенный стрим, а пушить новые элементы
+        /**
+         * mapMulti - это альтернатива flatMap, который позволяет не создавать вложенный стрим, а пушить новые элементы
+         */
         Stream.of("hello", "world")
                 .<Character>mapMulti((str, sink) -> {
                     for (char c : str.toCharArray()) {
